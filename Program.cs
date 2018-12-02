@@ -36,7 +36,7 @@ namespace copy_backup
             Console.WriteLine("informe o diretorio do save game que deseja fazer backup ex: c:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\savegames");
             saveAtual = Console.ReadLine();
             if(saveAtual == null || saveAtual == ""){
-                saveAtual = "D:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\savegames";
+                saveAtual = "C:\\Program Files (x86)\\Ubisoft\\Ubisoft Game Launcher\\savegames";
             } 
             Console.WriteLine("======================================================================");
             Console.WriteLine($"Diretorio infromado para copia foi {saveAtual}");
