@@ -55,6 +55,9 @@ namespace copy_backup
             string yn = Console.ReadLine();
             Console.WriteLine("======================================================================");
             if(yn.ToLower() == "y") {
+                Console.WriteLine(".....................................");
+                Console.WriteLine($"backup realizado as {DateTime.Now}");                    
+                SistemaBackup.Backup(saveAtual, copiaNovoSave + "backup-"+ DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss"));
                 //primeiro subscriber
                 observable.Subscribe((x) =>
                 {
